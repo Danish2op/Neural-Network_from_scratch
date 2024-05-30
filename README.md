@@ -1,7 +1,3 @@
-Here's a template for your GitHub readme file:
-
----
-
 # Neural Network Comparison for MNIST Dataset
 
 ## Overview
