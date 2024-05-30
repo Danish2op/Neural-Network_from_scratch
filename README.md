@@ -33,14 +33,19 @@ The MNIST dataset consists of grayscale images of handwritten digits (0-9), with
    - $f(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha(e^x - 1) & \text{if } x \leq 0 \end{cases}$
    - Smooths the gradient near zero and can handle negative values well.
 
+4. **Sigmoid**
+   - $f(x) = \frac{1}{1 + e^{-x}}$
+   - Outputs values between 0 and 1, often used for binary classification tasks.
+   - Smooth and continuous, but can suffer from the vanishing gradient problem for very large or small inputs.
+
 ### Training
 - Trained each model using gradient descent with a learning rate of 0.10 for 500 iterations.
 - Calculated accuracy on a validation set every 10 iterations.
   
 ### Results
-- **ReLU**: Achieved accuracy of XX%.
-- **LeakyReLU**: Achieved accuracy of XX%.
-- **ELU**: Achieved accuracy of XX%.
+- **LeakyReLU + ELU**: Achieved accuracy of 89%.
+- **ReLU**: Achieved accuracy of 88.45%.
+- **Sigmod**: Achieved accuracy of 79.09%.
 
 ## Mathematics
 ### Softmax Activation
@@ -51,11 +56,10 @@ $$
 where $K$ is the number of classes.
 
 ## Graphs
-Insert the accuracy graph here, showing the accuracy of each model over iterations.
+![Accuracy Graph](link-to-your-image-file)
+
 
 ## Conclusion
 In conclusion, this project demonstrates the impact of different activation functions on neural network performance. Each activation function has its strengths and weaknesses, influencing the model's learning behavior and accuracy.
 
----
 
-Feel free to add more details or sections as needed, and don't forget to insert the accuracy graph in the designated space!
