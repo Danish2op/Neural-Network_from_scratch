@@ -56,7 +56,7 @@ $$
 where $K$ is the number of classes.
 
 ## Graphs
-![Accuracy Graph](link-to-your-image-file)
+![Accuracy Graph](graphl.png)
 
 
 ## Conclusion
