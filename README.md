@@ -49,13 +49,20 @@ The MNIST dataset consists of grayscale images of handwritten digits (0-9), with
 
 ## Mathematics
 ### Softmax Activation
-The softmax function is used in the output layer to convert raw scores into probabilities. For a vector $Z$ of raw scores, the softmax function is calculated as:
 
-$$
-\text{softmax}(Z)_i = \frac{e^{Z_i}}{\sum_{j=1}^{K} e^{Z_j}}
-$$
+The softmax function is used in the output layer of neural networks for multiclass classification tasks. It converts raw scores (also known as logits) into probabilities, making it suitable for determining the likelihood of each class.
 
-where $K$ is the number of classes.
+For a vector of raw scores $Z$, the softmax function calculates the probability of class $i$ (where $i$ ranges from 1 to $K$, the number of classes) as:
+
+$$ \text{softmax}(Z)_i = \frac{e^{Z_i}}{\sum_{j=1}^{K} e^{Z_j}} $$
+
+In this equation:
+- $Z_i$ represents the raw score of class $i$.
+- $e$ is the base of the natural logarithm.
+- The denominator sums the exponentiated raw scores of all classes, ensuring that the resulting probabilities sum to 1.
+
+The softmax function's output can be interpreted as the model's confidence in each class, with higher probabilities indicating higher confidence.
+
 
 ## Graphs
 ![Accuracy Graph](graphl.png)
