@@ -49,10 +49,12 @@ The MNIST dataset consists of grayscale images of handwritten digits (0-9), with
 
 ## Mathematics
 ### Softmax Activation
-The softmax function is used in the output layer to convert raw scores into probabilities. For a vector $Z$ of raw scores:
+The softmax function is used in the output layer to convert raw scores into probabilities. For a vector $Z$ of raw scores, the softmax function is calculated as:
+
 $$
 \text{softmax}(Z)_i = \frac{e^{Z_i}}{\sum_{j=1}^{K} e^{Z_j}}
 $$
+
 where $K$ is the number of classes.
 
 ## Graphs
