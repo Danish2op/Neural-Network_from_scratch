@@ -54,7 +54,7 @@ The softmax function is used in the output layer of neural networks for multicla
 
 For a vector of raw scores $Z$, the softmax function calculates the probability of class $i$ (where $i$ ranges from 1 to $K$, the number of classes) as:
 
-{\displaystyle \sigma (\mathbf {z} )_{i}={\frac {e^{z_{i}}}{\sum _{j=1}^{K}e^{z_{j}}}}\,.}
+# σ(x)i = e^(xi) / Σ(e^(xi))
 
 In this equation:
 - $Z_i$ represents the raw score of class $i$.
