@@ -26,7 +26,7 @@ The MNIST dataset consists of grayscale images of handwritten digits (0-9), with
    - Helps alleviate the "dying ReLU" problem by allowing small negative values.
 
 3. **ELU (Exponential Linear Unit)**
-   - $f(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha(e^x - 1) & \text{if } x \leq 0 \end{cases}$
+   - f(x) = x if x > 0, and f(x) = α(e^x - 1) if x ≤ 0
    - Smooths the gradient near zero and can handle negative values well.
 
 4. **Sigmoid**
