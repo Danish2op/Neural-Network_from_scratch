@@ -151,9 +151,9 @@ def sigmoid(x):
 
 | Activation Function | Final Accuracy | Training Time | Convergence Speed |
 |-------------------|---------------|---------------|-------------------|
-| LeakyReLU + ELU | **89.5%** | ~4 minutes | Fast |
-| ReLU | 88.45% | ~3 minutes | Medium |
-| Sigmoid | 79.7% | ~3 minutes | Slow |
+| LeakyReLU + ELU | **93.4%** | ~4 minutes | Fast |
+| ReLU | 93.85% | ~3 minutes | Medium |
+| Sigmoid | 86.1% | ~3 minutes | Slow |
 
 ## 🛠️ Code Structure Deep Dive
 
